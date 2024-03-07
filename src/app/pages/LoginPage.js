@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "./css/login.css";
+import "../assets/css/login.css";
 
 const LoginPage = () => {
   // const container = document.getElementById("container");

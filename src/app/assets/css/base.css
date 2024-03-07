@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* global Css heading, subtext, desc */
+.heading {
+  font-weight: 500px;
+  font-size: 35px;
+  line-height: 1.4285714286;
+  margin-bottom: 20px;
+}
+
+.heading-small {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.text {
+  line-height: 1.875;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-small {
+  font-size: 14px;
+  line-height: 2.1428571429;
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+@media (hover: hover) {
+  .menu-link {
+    position: relative;
+    transition: all 0.2s linear;
+  }
+  .menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #f53838;
+    transition: all 0.2s linear;
+  }
+  .menu-link:hover {
+    color: #f53838;
+  }
+  .menu-link:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
